@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+ <link rel="stylesheet" href="intro.css">
+ <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald">
+ <style>
+    body{ 
+        margin: 0px;
+        padding: 0px;
+        color:white;
+        background: url('http://trumpwallpapers.com/wp-content/uploads/Workout-Wallpaper-02-1920-x-1197.jpg');
+    }
+    .left
+    {   
+        font-family: 'Courier New', Courier, monospace;
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top:20px;
+        border-radius: 10px;
+    }
+    .left img
+    {   margin-left: 5px;
+        margin-bottom: 0px;
+        width: 80px;
+        filter: invert(100%);
+    }
+    .left div
+    {   text-align: center;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .center
+    {   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid yellow; */
+        
+    }
+    .right
+    {   
+        /* border: 2px solid green; */
+        display: inline-block;
+        position: absolute;
+        right:50px ;
+        top:20px;
+    }
+    .navbar
+    {
+        display: inline-block;
+    }
+    .navbar li
+    {
+        display: inline-block;
+        font-size: 25px;
+        padding:0px 10px 0px 10px;
+    }
+    .navbar li a
+    {  
+       display: inline-block;
+       color: white;
+       text-decoration: none;
+       padding: 10px 10px;
+    }
+    .navbar li a:hover
+    {
+       color: brown;
+       text-decoration: underline;
+    }
+    .btn
+    {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        /* border: 2px solid gray; */
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+    .btn:hover
+    {
+        background-color: rgb(111, 101, 101);
+    }
+    .container
+    {
+        /* border: 2px solid green; */
+    margin: 214px 86px;
+    padding: 12px 12px;
+    width: 35%;
+    border-radius: 10px;
+    }
+       
+    h1
+    {
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+    .form div
+    {
+        font-size: 25px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    .form-group input{
+        display: block;
+        font-size: 20px;
+        width: 60%;
+        margin: 10px auto;
+        padding: 10px 10px;
+        text-align: center;
+        border-radius: 12px;
+       
+    }
+    .sumbit{
+        display: block;
+        font-size: 20px;
+        width: 64%;
+        margin: 10px auto;
+        padding: 10px 10px;
+        text-align: center;
+        border-radius: 12px;
+        background-color: green;
+        color: white;
+    }
+   
+    
+ </style>
+<body> 
+    <header>
+        <div class="left">
+            <img src="https://media.istockphoto.com/id/1331186720/vector/dumbbell.jpg?s=612x612&w=0&k=20&c=ztAKf6ZaSrWTBQVW7Nj2yrEbGM0FxitFrze39W-HdMs=" alt="Gym logo">
+            <div >Gym Logo</div>
+        </div>
+        <div class="center">
+            
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li> <a href="#">Fitness calculator</a></li>
+                    <li><a href="#">contact Us</a></li>
+                </ul>
+           
+        </div>
+        <div class="right">
+         <button class="btn">Help</button>
+         <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of your are</h1>
+       <form action="action.php">
+        <div class="form-group">
+              <input type="text" name ="myName" id="name" placeholder="Enter your name">
+         </div> 
+         <div class="form-group"> <input type="text" name="myweight" id="weight" placeholder="Enter your weight">
+            </div>
+            <div class="form-group"> <input type="text" name="mygender" id="gender" placeholder="Enter your gender">
+            </div>
+            <div class="form-group"> <input type="text" name="mycity" id="city" placeholder="Enter your city">
+            </div>
+            <button class="sumbit">Sumbit</button>
+       </form>
+    </div>
+
+    
+</body>
+</html>
